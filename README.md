@@ -64,9 +64,34 @@
         
         (4) hint:  Use the break; statement to exit
 
-6. PrimeNumber
+6. PrimeNumber:
 
         (1) Create a for statement using any range of numbers. Determine if the number is a prime number using the isPrime method if it         is a prime number, print it out AND increment a count of the number of prime numbers found if that count is 3 exit the for loop
         
         (2) hint:  Use the break; statement to exit
         
+7. Sum3And5:
+
+        (1) Create a for statement using a range of numbers from 1 to 1000 inclusive. Sum all the numbers that can be divided with both         3 and also with 5.
+        
+        (2) For those numbers that met the above conditions, print out the number. Break out of the loop once you find 5 numbers that           met the above conditions.
+
+        (3) After breaking out of the loop print the sum of the numbers that met the above conditions.
+
+8. SumOdd:
+
+        (1) Write a method called isOdd with an int parameter and call it number. The method needs to return a boolean. Check that               number is > 0, if it is not return false. If number is odd return true, otherwise  return false.
+
+        (2) Write a second method called sumOdd that has 2 int parameters start and end, which represent a range of numbers. The method         should use a for loop to sum all odd numbers  in that range including the end and return the sum. It should call the method             isOdd to check if each number is odd. The parameter end needs to be greater than or equal to start and both start and end               parameters have to be greater than 0. If those conditions are not satisfied return -1 from the method to indicate invalid input. 
+
+        (3) Example input/output:
+
+                * sumOdd(1, 100); → should return 2500
+                * sumOdd(-1, 100); →  should return -1
+                * sumOdd(100, 100); → should return 0
+                * sumOdd(13, 13); → should return 13 (This set contains one number, 13, and it is odd)
+                * sumOdd(100, -100); → should return -1
+                * sumOdd(100, 1000); → should return 247500
+
+
+        (4) TIP: use the remainder operator to check if the number is odd
