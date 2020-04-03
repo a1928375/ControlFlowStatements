@@ -46,9 +46,13 @@
         (7) Examples of input/output:
 
                 * getDaysInMonth(1, 2020); → should return 31 since January has 31 days.
+		
                 * getDaysInMonth(2, 2020); → should return 29 since February has 29 days in a leap year and 2020 is a leap year.
+		
                 * getDaysInMonth(2, 2018); → should return 28 since February has 28 days if it's not a leap year and 2018 is not a leap                 year.
+		
                 * getDaysInMonth(-1, 2020); → should return -1 since the parameter month is invalid.
+		
                 * getDaysInMonth(1, -2020); → should return -1 since the parameter year is outside the range of 1 to 9999.
 
 
@@ -115,7 +119,7 @@
         (5) Hint: 
 	        
                 (i) Use n % 10 to extract the least-significant digit.
-	        (2) Use n = n / 10 to discard the least-significant digit.
+	        (ii) Use n = n / 10 to discard the least-significant digit.
 
 11. NumberPalindrome:
 
@@ -191,13 +195,11 @@
 
 	(1) Write a method named hasSameLastDigit with three parameters of type int. Each number should be within the range of 10 		(inclusive) - 1000 (inclusive). If one of the numbers is not within the range, the method should return false. The method should  	  return true if at least two of the numbers share the same rightmost digit; otherwise, it should return false.
 
-
 	(2) EXAMPLE INPUT/OUTPUT:
 
 		* hasSameLastDigit (41, 22, 71); → should return true since 1 is the rightmost digit in numbers 41 and 71
 		* hasSameLastDigit (23, 32, 42); → should return true since 2 is the rightmost digit in numbers 32 and 42
 		* hasSameLastDigit (9, 99, 999); → should return false since 9 is not within the range of 10-1000
-
 
 	(3) Write another method named isValid with one parameter of type int. The method needs to return true if the number parameter 		is in range of 10(inclusive) - 1000(inclusive), otherwise return false.
 
@@ -226,7 +228,6 @@
 		* getGreatestCommonDivisor(9, 18); should return -1 since the first parameter is < 10
 		* getGreatestCommonDivisor(81, 153); should return 9 since both can be divided by 9 without a remainder
 
-
 	(4) HINT: 
 	
 		(i) Use a while or a for loop and check if both numbers can be divided without a remainder.
@@ -245,7 +246,6 @@
 		* printFactors(10); → should print 1 2 5 10
 		* printFactors(-1); → should print "Invalid Value" since number is < 1
 
-
 	(4) HINT: 
 	
 		(i) Use a while or for loop.
@@ -262,10 +262,7 @@
 
 	(1) What is the perfect number? A perfect number is a positive integer which is equal to the sum of its proper positive 		divisors. Proper positive divisors are positive integers that fully divide the perfect number without leaving a remainder and 		exclude the perfect number itself.
 	
-	(2) For example, take the number 6:
-		Its proper divisors are 1, 2, and 3 (since 6 is the value of the perfect number, it is excluded), and the sum of its 			proper divisors is 1 + 2 + 3 = 6. 
-
-	Therefore, 6 is a perfect number (as well as the first perfect number).
+	(2) For example, take the number 6: Its proper divisors are 1, 2, and 3 (since 6 is the value of the perfect number, it is 		excluded), and the sum of its proper divisors is 1 + 2 + 3 = 6. Therefore, 6 is a perfect number (as well as the first perfect 		number).
 
 	(3) Write a method named isPerfectNumber with one parameter of type int named number. If number is < 1, the method should return 	 false. The method must calculate if the number is perfect. If the number is perfect, the method should return true; otherwise, 	it should return false.
 
@@ -278,7 +275,6 @@
 		* isPerfectNumber(5); should return false since its only proper divisor is 1 and the sum is 1 not 5
 
 		* isPerfectNumber(-1); should return false since the number is < 1
-
 
 	(5) HINT: 
 	
@@ -308,7 +304,7 @@
 	(6) The method getDigitCount should have one int parameter called number and return the count of the digits in that number. If 		the number is negative, return -1 to indicate an invalid value. For example, if the number has a value of 100, the method 		getDigitCount should return 3 since the number 100 has 3 digits (1, 0, 0).
 
 	(7) 
-		(i)Example Input/Output - getDigitCount method:
+		(i) Example Input/Output - getDigitCount method:
 
 			* getDigitCount(0); should return 1 since there is only 1 digit
 			* getDigitCount(123); should return 3
@@ -328,7 +324,6 @@
 			* numberToWords(1010); should print "One Zero One Zero".
 			* numberToWords(1000); should print "One Zero Zero Zero".
 			* numberToWords(-12); should print "Invalid Value" since the parameter is negative.
-
 
 	(8) HINT: 
 	
@@ -366,7 +361,6 @@
 
 	(1) Write a method named getLargestPrime with one parameter of type int named number. If the number is negative or does not have 	 any prime numbers, the method should return -1 to indicate an invalid value. The method should calculate the largest prime 		factor of a given number and return it.
 
-
 	(2) EXAMPLE INPUT/OUTPUT:
 
 		* getLargestPrime (21); should return 7 since 7 is the largest prime (3 * 7 = 21)
@@ -375,7 +369,6 @@
 		* getLargestPrime (45); should return 5 since 5 is the largest prime (3 * 3 * 5 = 45)
 		* getLargestPrime (-1); should return -1 since the parameter is negative
 
-
 	(3) HINT: Since the numbers 0 and 1 are not considered prime numbers, they cannot contain prime numbers.
 
 22. DiagonalStar: 
@@ -383,7 +376,6 @@
 	(1) Write a method named printSquareStar with one parameter of type int named number. If number is < 5, the method should print 	"Invalid Value".
 
 	(2) The method should print diagonals to generate a rectangular pattern composed of stars (*). This should be accomplished by 		using loops (see examples below).
-
 
 	(3) EXAMPLE INPUT/OUTPUT:
 
@@ -397,7 +389,6 @@
 		** **
 		*****
 
-
 		Explanation:
 
 		*****   5 stars
@@ -405,7 +396,6 @@
 		* * *   1 star space 1 star space 1 star
 		** **   2 stars space 2 stars
 		*****   5 stars
-
 
 		EXAMPLE 2
 
@@ -426,7 +416,6 @@
 		* In the first or last column
 		* When the row number equals the column number
 		* When the column number equals rowCount - currentRow + 1 (where currentRow is current row number)
-
 
 	(5) HINT: 
 	
@@ -482,7 +471,6 @@
 
 		SUM = 0 AVG = 0
 
-
 	(4) TIP: 
 	
 		(i) Use Scanner to read an input from the user.
@@ -507,8 +495,6 @@
 
 		*getBucketCount(2.75, 3.25, 2.5, 1); → should return 3 since the wall area is 8.9375, a single bucket can cover an area 		of 2.5 and Bob has 1 extra bucket at home.
 
-
-
 	(5) Bob does not like to enter 0 for the extraBuckets parameter so he needs another method. Write another overloaded method 		named getBucketCount with 3 parameters namely width, height, and areaPerBucket (all of type double). This method needs to return 	 a value of type int that represents the number of buckets that Bob needs to buy before going to work. To calculate the bucket 		count, refer to the notes below.
 
 	(6) If one of the parameters width, height or areaPerBucket is less or equal to 0, the method needs to return -1 to indicate an 	invalid value. If all parameters are valid, the method needs to calculate the number of buckets and return it.
@@ -520,7 +506,6 @@
 		*getBucketCount(3.4, 2.1, 1.5); → should return 5 since the wall area is 7.14, and a single bucket can cover an area of 		1.5.
 
 		*getBucketCount(7.25, 4.3, 2.35); → should return 14 since the wall area is 31.175, and a single bucket can cover an 			area of 2.35.
-
 
 	(8) In some cases, Bob does not know the width and height of the wall but he knows the area of a wall. He needs you to write 		another method. Write another overloaded method named getBucketCount with 2 parameters namely, area and areaPerBucket (both of 		type double).
 
@@ -535,6 +520,5 @@
 		*getBucketCount(3.26, 0.75); → should return 5 since the wall area is 3.26, and a single bucket can cover an area of 			0.75 .
 
 	(11) Do your best to help Bob.
-
 
 	(12) NOTE: Use the method Math.ceil to round the number of calculated buckets (double) then convert it into an int before 		returning the value from the methods.
