@@ -153,10 +153,36 @@
 
 		* sumFirstAndLastDigit(252); → should return 4, the first digit is 2 and the last is 2 which gives us 2+2 and the sum is 
 		4.
+		
 		* sumFirstAndLastDigit(257); → should return 9, the first digit is 2 and the last is 7 which gives us 2+7 and the sum is 
 		9.
+		
 		* sumFirstAndLastDigit(0); → should return 0, the first digit and the last digit is 0 since we only have 1 digit, which 
 		gives us 0+0 and the sum is 0.
+		
 		* sumFirstAndLastDigit(5); → should return 10, the first digit and the last digit is 5 since we only have 1 digit, which 
 		gives us 5+5 and the sum is 10.
+		
 		* sumFirstAndLastDigit(-10); → should return -1, since the parameter is negative and needs to be positive.
+
+13. EvenDigitSum:
+
+	(1) Write a method named getEvenDigitSum with one parameter of type int called number. The method should return the sum of the 		even digits within the number. If the number is negative, the method should return -1 to indicate an invalid value.
+
+	(2) EXAMPLE INPUT/OUTPUT:
+
+		* getEvenDigitSum(123456789); → should return 20 since 2 + 4 + 6 + 8 = 20
+		* getEvenDigitSum(252); → should return 4 since 2 + 2 = 4
+		* getEvenDigitSum(-22); → should return -1 since the number is negative
+
+14. SharedDigit:
+
+	(1) Write a method named hasSharedDigit with two parameters of type int. Each number should be within the range of 10 			(inclusive) - 99 (inclusive). If one of the numbers is not within the range, the method should return false.
+
+	(2) The method should return true if there is a digit that appears in both numbers, such as 2 in 12 and 23; otherwise, the 		method should return false.
+
+	(3) EXAMPLE INPUT/OUTPUT:
+
+		* hasSharedDigit(12, 23); → should return true since the digit 2 appears in both numbers
+		* hasSharedDigit(9, 99); → should return false since 9 is not within the range of 10-99
+		* hasSharedDigit(15, 55); → should return true since the digit 5 appears in both numbers
