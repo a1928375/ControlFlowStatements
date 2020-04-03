@@ -121,7 +121,7 @@
 
 	(1) Write a method called isPalindrome with one int parameter called number. The method needs to return a boolean. It should 		return true if the number is a palindrome number otherwise it should return false. Check the tips below for more info about 		palindromes.
 	
-	(2) Example Input/Output
+	(2) Example Input/Output:
 
 		isPalindrome(-1221); → should return true
 		isPalindrome(707); → should return true
@@ -149,7 +149,7 @@
 
 	(2) The method needs to find the first and the last digit of the parameter number passed to the method, using a loop and return 	the sum of the first and the last digit of that number. If the number is negative then the method needs to return -1 to indicate 	 an invalid value.
 
-	(3) Example input/output
+	(3) Example input/output:
 
 		* sumFirstAndLastDigit(252); → should return 4, the first digit is 2 and the last is 2 which gives us 2+2 and the sum is 
 		4.
@@ -186,3 +186,49 @@
 		* hasSharedDigit(12, 23); → should return true since the digit 2 appears in both numbers
 		* hasSharedDigit(9, 99); → should return false since 9 is not within the range of 10-99
 		* hasSharedDigit(15, 55); → should return true since the digit 5 appears in both numbers
+
+15. LastDigitChecker:
+
+	(1) Write a method named hasSameLastDigit with three parameters of type int. Each number should be within the range of 10 		(inclusive) - 1000 (inclusive). If one of the numbers is not within the range, the method should return false. The method should  	  return true if at least two of the numbers share the same rightmost digit; otherwise, it should return false.
+
+
+	(2) EXAMPLE INPUT/OUTPUT:
+
+		* hasSameLastDigit (41, 22, 71); → should return true since 1 is the rightmost digit in numbers 41 and 71
+		* hasSameLastDigit (23, 32, 42); → should return true since 2 is the rightmost digit in numbers 32 and 42
+		* hasSameLastDigit (9, 99, 999); → should return false since 9 is not within the range of 10-1000
+
+
+	(3) Write another method named isValid with one parameter of type int. The method needs to return true if the number parameter 		is in range of 10(inclusive) - 1000(inclusive), otherwise return false.
+
+	(4) EXAMPLE INPUT/OUTPUT:
+
+		* isValid(10); → should return true since 10 is within the range of 10-1000
+		* isValid(468); → should return true since 468 is within the range of 10-1000
+		* isValid(1051); → should return false since 1051 is not within the range of 10-1000
+
+16. GreatestCommonDivisor:
+
+	(1) Write a method named getGreatestCommonDivisor with two parameters of type int named first and second. If one of the 		parameters is < 10, the method should return -1 to indicate an invalid value. The method should return the greatest common 		divisor of the two numbers (int). The greatest common divisor is the largest positive integer that can fully divide each of the 	integers (i.e. without leaving a remainder).
+	
+	(2) For example 12 and 30:
+
+		12 can be divided by 1, 2, 3, 4, 6, 12
+		30 can be divided by 1, 2, 3, 5, 6, 10, 15, 30
+
+	The greatest common divisor is 6 since both 12 and 30 can be divided by 6, and there is no resulting remainder.
+
+
+	(3) EXAMPLE INPUT/OUTPUT:
+
+		* getGreatestCommonDivisor(25, 15); should return 5 since both can be divided by 5 without a remainder
+		* getGreatestCommonDivisor(12, 30); should return 6 since both can be divided by 6 without a remainder
+		* getGreatestCommonDivisor(9, 18); should return -1 since the first parameter is < 10
+		* getGreatestCommonDivisor(81, 153); should return 9 since both can be divided by 9 without a remainder
+
+
+	(4) HINT: 
+	
+		(i) Use a while or a for loop and check if both numbers can be divided without a remainder.
+		(ii) Find the minimum of the two numbers.
+
