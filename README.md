@@ -251,12 +251,12 @@
 		(i) Use a while or for loop.
 		(ii) When printing numbers, each number can be in its own line. They don't have to be separated by a space.
 
-			For example, the printout for printFactors(10); can be:
+		For example, the printout for printFactors(10); can be:
 
-			1
-			2
-			5
-			10
+		1
+		2
+		5
+		10
 
 18. PerfectNumber:
 
@@ -336,9 +336,9 @@
 
 		(ii) When printing words, each word can be in its own line. For example, numberToWords(123); can be:
 
-			One
-			Two
-			Three
+		One
+		Two
+		Three
 
 		They don't have to be separated by a space.
 
@@ -435,3 +435,106 @@
 		(ii) To print on the same line, use the print method instead of println, e.g. System.out.print(" "); prints a space and 		does not "move" to another line.
 
 		(iii) To "move" to another line, you can use an empty println call, e.g. System.out.println(); .
+
+23. ReadingUserInput: Read inputs from users
+
+24. MinAndMaxInput:
+
+	(1) Read the numbers from the console entered by the user and print the minimum and maximum number the user has entered. Before 	the user enters the number, print the message "Enter number:"
+	
+	(2) If the user enters an invalid number, break out of the loop and print the minimum and maximum number.
+
+	(3) Hint: Use an endless while loop.
+
+25. InputCalculator:
+
+	(1) Write a method called inputThenPrintSumAndAverage that does not have any parameters. The method should not return anything 		(void) and it needs to keep reading int numbers from the keyboard.
+
+	(2) When the user enters something that is not an int then it needs to print a message in the format "SUM = XX AVG = YY".
+
+		XX represents the sum of all entered numbers of type int.
+		YY represents the calculated average of all numbers of type long.
+
+	(3) EXAMPLES OF INPUT/OUTPUT:
+
+		EXAMPLE 1:
+
+		INPUT:
+
+		1
+		2
+		3
+		4
+		5
+		a
+
+		OUTPUT
+
+		SUM = 15 AVG = 3
+
+		EXAMPLE 2:
+
+		INPUT:
+
+		hello
+
+		OUTPUT:
+
+		SUM = 0 AVG = 0
+
+
+	(4) TIP: 
+	
+		(i) Use Scanner to read an input from the user.
+		(ii) Use casting when calling the round method since it needs double as a parameter.
+		(iii) Use the method Math.round to round the calculated average (double). The method round returns long.
+		(iv) Be mindful of spaces in the printed message.
+		(v) Be mindful of users who may type an invalid input right away (see example above).
+
+26. PaintJob:
+
+	(1) Bob is a wall painter and he needs your help. You have to write a program that helps Bob calculate how many buckets of paint 	 he needs to buy before going to work. Bob might also have some extra buckets at home. He also knows the area that he can cover 	with one bucket of paint.
+
+	(2) Write a method named getBucketCount with 4 parameters. The first parameter should be named width of type double. This 		parameter represents the width of the wall. The second parameter should be named height of type double. This parameter 			represents the height of the wall. The third parameter should be named areaPerBucket. This parameter represents the area that 		can be covered with one bucket of paint. The fourth parameter should be named extraBuckets. This parameter represents the bucket 	 count that Bob has at home. 
+	
+	(3) The method needs to return a value of type int that represents the number of buckets that Bob needs to buy before going to 		work. To calculate the bucket count, refer to the notes below. If one of the parameters width, height or areaPerBucket is less 		or equal to 0 or if extraBuckets is less than 0, the method needs to return -1 to indicate an invalid value. If all parameters 		are valid, the method needs to calculate the number of buckets and return it.
+
+	(4) Examples of input/output:
+
+		*getBucketCount(-3.4, 2.1, 1.5, 2); → should return -1 since the width parameter is invalid
+
+		*getBucketCount(3.4, 2.1, 1.5, 2); → should return 3 since the wall area is 7.14, a single bucket can cover an area of 			1.5 and Bob has 2 extra buckets home.
+
+		*getBucketCount(2.75, 3.25, 2.5, 1); → should return 3 since the wall area is 8.9375, a single bucket can cover an area 		of 2.5 and Bob has 1 extra bucket at home.
+
+
+
+	(5) Bob does not like to enter 0 for the extraBuckets parameter so he needs another method. Write another overloaded method 		named getBucketCount with 3 parameters namely width, height, and areaPerBucket (all of type double). This method needs to return 	 a value of type int that represents the number of buckets that Bob needs to buy before going to work. To calculate the bucket 		count, refer to the notes below.
+
+	(6) If one of the parameters width, height or areaPerBucket is less or equal to 0, the method needs to return -1 to indicate an 	invalid value. If all parameters are valid, the method needs to calculate the number of buckets and return it.
+
+	(7) Examples of input/output:
+
+		*getBucketCount(-3.4, 2.1, 1.5); → should return -1 since the width parameter is invalid
+		
+		*getBucketCount(3.4, 2.1, 1.5); → should return 5 since the wall area is 7.14, and a single bucket can cover an area of 		1.5.
+
+		*getBucketCount(7.25, 4.3, 2.35); → should return 14 since the wall area is 31.175, and a single bucket can cover an 			area of 2.35.
+
+
+	(8) In some cases, Bob does not know the width and height of the wall but he knows the area of a wall. He needs you to write 		another method. Write another overloaded method named getBucketCount with 2 parameters namely, area and areaPerBucket (both of 		type double).
+
+	(9) The method needs to return a value of type int that represents the number of buckets that Bob needs to buy before going to 		work. To calculate the bucket count, refer to the notes below. If one of the parameters area or areaPerBucket is less or equal 		to 0, the method needs to return -1to indicate an invalid value.If all parameters are valid, the method needs to calculate the 		number of buckets and return it.
+	
+	(10) Examples of input/output:
+
+		*getBucketCount(3.4, 1.5); → should return 3 since the area is 3.4 and a single bucket can cover an area of 1.5
+
+		*getBucketCount(6.26, 2.2); → should return 3 since the wall area is 6.26 and a single bucket can cover an area of 2.2.
+
+		*getBucketCount(3.26, 0.75); → should return 5 since the wall area is 3.26, and a single bucket can cover an area of 			0.75 .
+
+	(11) Do your best to help Bob.
+
+
+	(12) NOTE: Use the method Math.ceil to round the number of calculated buckets (double) then convert it into an int before 		returning the value from the methods.
