@@ -232,3 +232,55 @@
 		(i) Use a while or a for loop and check if both numbers can be divided without a remainder.
 		(ii) Find the minimum of the two numbers.
 
+17. AllFactors:
+
+	(1) Write a method named printFactors with one parameter of type int named number. If number is < 1, the method should print 		"Invalid Value".
+
+	(2) The method should print all factors of the number. A factor of a number is an integer which divides that number wholly (i.e. 	 without leaving a remainder). For example, 3 is a factor of 6 because 3 fully divides 6 without leaving a remainder. In other 		words 6 / 3 = 2.
+	
+	(3) EXAMPLE INPUT/OUTPUT:
+
+		* printFactors(6); → should print 1 2 3 6
+		* printFactors(32); → should print 1 2 4 8 16 32
+		* printFactors(10); → should print 1 2 5 10
+		* printFactors(-1); → should print "Invalid Value" since number is < 1
+
+
+	(4) HINT: 
+	
+		(i) Use a while or for loop.
+		(ii) When printing numbers, each number can be in its own line. They don't have to be separated by a space.
+
+			For example, the printout for printFactors(10); can be:
+
+			1
+			2
+			5
+			10
+
+18. PerfectNumber:
+
+	(1) What is the perfect number? A perfect number is a positive integer which is equal to the sum of its proper positive 		divisors. Proper positive divisors are positive integers that fully divide the perfect number without leaving a remainder and 		exclude the perfect number itself.
+	
+	(2) For example, take the number 6:
+		Its proper divisors are 1, 2, and 3 (since 6 is the value of the perfect number, it is excluded), and the sum of its 			proper divisors is 1 + 2 + 3 = 6. 
+
+	Therefore, 6 is a perfect number (as well as the first perfect number).
+
+	(3) Write a method named isPerfectNumber with one parameter of type int named number. If number is < 1, the method should return 	 false. The method must calculate if the number is perfect. If the number is perfect, the method should return true; otherwise, 	it should return false.
+
+	(4) EXAMPLE INPUT/OUTPUT:
+
+		* isPerfectNumber(6); should return true since its proper divisors are 1, 2, 3 and the sum is 1 + 2 + 3 = 6
+		
+		* isPerfectNumber(28); should return true since its proper divisors are 1, 2, 4, 7, 14 and the sum is 1 + 2 + 4 + 7 + 14 		= 28
+
+		* isPerfectNumber(5); should return false since its only proper divisor is 1 and the sum is 1 not 5
+
+		* isPerfectNumber(-1); should return false since the number is < 1
+
+
+	(5) HINT: 
+	
+		(i) Use a while or for loop.
+		(ii) Use the remainder operator.
