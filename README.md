@@ -117,3 +117,46 @@
                 (i) Use n % 10 to extract the least-significant digit.
 	        (2) Use n = n / 10 to discard the least-significant digit.
 
+11. NumberPalindrome:
+
+	(1) Write a method called isPalindrome with one int parameter called number. The method needs to return a boolean. It should 		return true if the number is a palindrome number otherwise it should return false. Check the tips below for more info about 		palindromes.
+	
+	(2) Example Input/Output
+
+		isPalindrome(-1221); → should return true
+		isPalindrome(707); → should return true
+		isPalindrome(11212); → should return false because reverse is 21211 and that is not equal to 11212.
+
+	(3) Tip 
+		
+		(i) What is a Palindrome number?  A palindrome number is a number which when reversed is equal to the original number. 			For example: 121, 12321, 1001 etc.
+		
+		(ii) Logic to check a palindrome number
+
+		(iii) Find the the reverse of the given number. Store it in some variable say reverse. Compare the number with reverse. 		If both are the the same then the number is a palindrome otherwise it is not.
+
+		(iv) Logic to reverse a number. Declare and initialize another variable to store the reverse of a number, for example 			reverse = 0.
+
+		(v) Extract the last digit of the given number by performing the modulo division (remainder). Store the last digit to 			some variable say lastDigit = num % 10. Increase the place value of reverse by one. To increase place value multiply the 		 reverse variable by 10 e.g. reverse = reverse * 10. Add lastDigit to reverse. Since the last digit of the number is 			processed, remove the last digit of num. To remove the last digit divide number by 10. Repeat steps until number is not 		equal to (or greater than) zero. 
+
+		(vi) A while loop would be good for this coding exercise.
+		
+		(vii) Be careful with negative numbers. They can also be palindrome numbers. Be careful with reversing a number, you 			will need a parameter for comparing a reversed number with the starting number (parameter).
+
+12. FirstAndLastDigitSum:
+
+	(1) Write a method named sumFirstAndLastDigit with one parameter of type int called number.
+
+	(2) The method needs to find the first and the last digit of the parameter number passed to the method, using a loop and return 	the sum of the first and the last digit of that number. If the number is negative then the method needs to return -1 to indicate 	 an invalid value.
+
+	(3) Example input/output
+
+		* sumFirstAndLastDigit(252); → should return 4, the first digit is 2 and the last is 2 which gives us 2+2 and the sum is 
+		4.
+		* sumFirstAndLastDigit(257); → should return 9, the first digit is 2 and the last is 7 which gives us 2+7 and the sum is 
+		9.
+		* sumFirstAndLastDigit(0); → should return 0, the first digit and the last digit is 0 since we only have 1 digit, which 
+		gives us 0+0 and the sum is 0.
+		* sumFirstAndLastDigit(5); → should return 10, the first digit and the last digit is 5 since we only have 1 digit, which 
+		gives us 5+5 and the sum is 10.
+		* sumFirstAndLastDigit(-10); → should return -1, since the parameter is negative and needs to be positive.
