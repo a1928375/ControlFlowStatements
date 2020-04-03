@@ -54,4 +54,19 @@
 
         (8) HINT: Use the switch statement.
 
+5. ForLoops:
 
+        (1) using the for statement, call the calculateInterest method with the amount of 10000 with an interestRate of 2,3,4,5,6,7, and         8 and print the results to the console window.
+
+        (2) How would you modify the for loop above to do the same thing as shown but to start from 8% and work back to 2%
+
+        (3) Create a for statement using any range of numbers. Determine if the number is a prime number using the isPrime method if it         is a prime number, print it out AND increment a count of the number of prime numbers found if that count is 3 exit the for loop
+        
+        (4) hint:  Use the break; statement to exit
+
+6. PrimeNumber
+
+        (1) Create a for statement using any range of numbers. Determine if the number is a prime number using the isPrime method if it         is a prime number, print it out AND increment a count of the number of prime numbers found if that count is 3 exit the for loop
+        
+        (2) hint:  Use the break; statement to exit
+        
