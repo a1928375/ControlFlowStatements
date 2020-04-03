@@ -18,7 +18,11 @@
 
         (3) Bonus: Write a second solution using if then else, instead of using switch.
 
-3. NumberInWord: Write a method called printNumberInWord. The method has one parameter number which is the whole number. The method needs to print "ZERO", "ONE", "TWO", ... "NINE", "OTHER" if the int parameter number is 0, 1, 2, .... 9 or other for any other number including negative numbers. You can use if-else statement or switch statement whatever is easier for you.
+3. NumberInWord: 
+
+	(1) Write a method called printNumberInWord. The method has one parameter number which is the whole number. 
+	
+	(2) The method needs to print "ZERO", "ONE", "TWO", ... "NINE", "OTHER" if the int parameter number is 0, 1, 2, .... 9 or other 	for any other number including negative numbers. You can use if-else statement or switch statement whatever is easier for you.
 
 4. NumbersOfDaysInMonth: 
 
@@ -30,7 +34,7 @@
 
         (4) Examples of input/output:
 
-                * isLeapYear(-1600); →  should return false since the parameter is not in the range (1-9999)
+                * isLeapYear(-1600); → should return false since the parameter is not in the range (1-9999)
                 * isLeapYear(1600); → should return true since 1600 is a leap year
                 * isLeapYear(2017); → should return false since 2017 is not a leap year
                 * isLeapYear(2000); → should return true because 2000 is a leap year 
@@ -86,9 +90,11 @@
 
         (1) Write a method called isOdd with an int parameter and call it number. The method needs to return a boolean. Check that               number is > 0, if it is not return false. If number is odd return true, otherwise  return false.
 
-        (2) Write a second method called sumOdd that has 2 int parameters start and end, which represent a range of numbers. The method         should use a for loop to sum all odd numbers  in that range including the end and return the sum. It should call the method             isOdd to check if each number is odd. The parameter end needs to be greater than or equal to start and both start and end               parameters have to be greater than 0. If those conditions are not satisfied return -1 from the method to indicate invalid input. 
+        (2) Write a second method called sumOdd that has 2 int parameters start and end, which represent a range of numbers. The method         should use a for loop to sum all odd numbers  in that range including the end and return the sum. 
+	
+	(3) It should call the method isOdd to check if each number is odd. The parameter end needs to be greater than or equal to start 	 and both start and end parameters have to be greater than 0. If those conditions are not satisfied return -1 from the method to 	 indicate invalid input. 
 
-        (3) Example input/output:
+        (4) Example input/output:
 
                 * sumOdd(1, 100); → should return 2500
                 * sumOdd(-1, 100); →  should return -1
@@ -98,7 +104,7 @@
                 * sumOdd(100, 1000); → should return 247500
 
 
-        (4) TIP: use the remainder operator to check if the number is odd
+        (5) TIP: use the remainder operator to check if the number is odd
 
 9. While:
 
@@ -141,11 +147,13 @@
 
 		(iv) Logic to reverse a number. Declare and initialize another variable to store the reverse of a number, for example 			reverse = 0.
 
-		(v) Extract the last digit of the given number by performing the modulo division (remainder). Store the last digit to 			some variable say lastDigit = num % 10. Increase the place value of reverse by one. To increase place value multiply the 		 reverse variable by 10 e.g. reverse = reverse * 10. Add lastDigit to reverse. Since the last digit of the number is 			processed, remove the last digit of num. To remove the last digit divide number by 10. Repeat steps until number is not 		equal to (or greater than) zero. 
-
-		(vi) A while loop would be good for this coding exercise.
+		(v) Extract the last digit of the given number by performing the modulo division (remainder). Store the last digit to 			some variable say lastDigit = num % 10. Increase the place value of reverse by one. 
 		
-		(vii) Be careful with negative numbers. They can also be palindrome numbers. Be careful with reversing a number, you 			will need a parameter for comparing a reversed number with the starting number (parameter).
+		(vi) To increase place value multiply the reverse variable by 10 e.g. reverse = reverse * 10. Add lastDigit to reverse. 		Since the last digit of the number is processed, remove the last digit of num. To remove the last digit divide number by 		10. Repeat steps until number is not equal to (or greater than) zero. 
+
+		(vii) A while loop would be good for this coding exercise.
+		
+		(viii) Be careful with negative numbers. They can also be palindrome numbers. Be careful with reversing a number, you 			will need a parameter for comparing a reversed number with the starting number (parameter).
 
 12. FirstAndLastDigitSum:
 
